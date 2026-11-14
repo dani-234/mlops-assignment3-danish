@@ -1,0 +1,299 @@
+﻿{
+  "request_id": "a7568407-a603-431f-997c-0122e86a7260",
+  "answer": "Multi-tool assessment completed from the evidence that was available.",
+  "known_facts": [
+    "Selected run 3089fbf5543c456a93aa2e0067c3fd2b recorded provenance: {'dvc_dataset_version': '5e2c38d5eb592abb539d9c9506da3811', 'dataset_md5': '5e2c38d5eb592abb539d9c9506da3811', 'git_commit': 'unavailable'}.",
+    "best_model returned observed data.",
+    "dataset_version returned observed data.",
+    "data_changes returned observed data.",
+    "run_details returned observed data."
+  ],
+  "uncertainties": [
+    "deployment_version was unavailable: ConfigException: Invalid kube-config file. No configuration found.",
+    "pod_diagnosis was unavailable: ConfigException: Invalid kube-config file. No configuration found.",
+    "dag_status was unavailable: ConnectError: [WinError 10061] No connection could be made because the target machine actively refused it",
+    "failed_tasks was unavailable: ConnectError: [WinError 10061] No connection could be made because the target machine actively refused it"
+  ],
+  "recommended_actions": [
+    "Retraining is not justified by a dataset change alone; require measured degradation, a failed quality gate, or a freshness breach."
+  ],
+  "tool_traces": [
+    {
+      "tool_name": "best_model",
+      "status": "SUCCESS",
+      "data": {
+        "available": true,
+        "metric": "f1_score",
+        "direction": "higher_is_better",
+        "best_run": {
+          "run_id": "3089fbf5543c456a93aa2e0067c3fd2b",
+          "status": "FINISHED",
+          "start_time": 1794428474386,
+          "end_time": 1794428474505,
+          "params": {
+            "n_estimators": "100",
+            "random_seed": "42"
+          },
+          "metrics": {
+            "f1_score": 0.88,
+            "accuracy": 0.8875,
+            "precision": 0.8918918918918919,
+            "recall": 0.868421052631579,
+            "roc_auc": 0.9771303258145363
+          },
+          "tags": {
+            "mlflow.user": "Danish Atif",
+            "mlflow.source.name": "-c",
+            "mlflow.source.type": "LOCAL",
+            "mlflow.runName": "mlops-agent-training",
+            "dvc_dataset_version": "5e2c38d5eb592abb539d9c9506da3811",
+            "dataset_md5": "5e2c38d5eb592abb539d9c9506da3811",
+            "git_commit": "unavailable",
+            "quality_gate": "true"
+          },
+          "artifact_uri": "file:C:/Users/Danish Atif/OneDrive/Desktop/assignment-03-mlops-agent/mlartifacts/1/3089fbf5543c456a93aa2e0067c3fd2b/artifacts",
+          "score": 0.88
+        },
+        "comparison": [
+          {
+            "run_id": "3089fbf5543c456a93aa2e0067c3fd2b",
+            "status": "FINISHED",
+            "start_time": 1794428474386,
+            "end_time": 1794428474505,
+            "params": {
+              "n_estimators": "100",
+              "random_seed": "42"
+            },
+            "metrics": {
+              "f1_score": 0.88,
+              "accuracy": 0.8875,
+              "precision": 0.8918918918918919,
+              "recall": 0.868421052631579,
+              "roc_auc": 0.9771303258145363
+            },
+            "tags": {
+              "mlflow.user": "Danish Atif",
+              "mlflow.source.name": "-c",
+              "mlflow.source.type": "LOCAL",
+              "mlflow.runName": "mlops-agent-training",
+              "dvc_dataset_version": "5e2c38d5eb592abb539d9c9506da3811",
+              "dataset_md5": "5e2c38d5eb592abb539d9c9506da3811",
+              "git_commit": "unavailable",
+              "quality_gate": "true"
+            },
+            "artifact_uri": "file:C:/Users/Danish Atif/OneDrive/Desktop/assignment-03-mlops-agent/mlartifacts/1/3089fbf5543c456a93aa2e0067c3fd2b/artifacts",
+            "score": 0.88
+          },
+          {
+            "run_id": "c6fe25a57a9f43029f6205e17c0af18b",
+            "status": "RUNNING",
+            "start_time": 1794428288293,
+            "end_time": null,
+            "params": {
+              "n_estimators": "100",
+              "random_seed": "42"
+            },
+            "metrics": {
+              "f1_score": 0.88,
+              "accuracy": 0.8875,
+              "precision": 0.8918918918918919,
+              "recall": 0.868421052631579,
+              "roc_auc": 0.9771303258145363
+            },
+            "tags": {
+              "mlflow.user": "Danish Atif",
+              "mlflow.source.name": "-c",
+              "mlflow.source.type": "LOCAL",
+              "mlflow.runName": "mlops-agent-training",
+              "dvc_dataset_version": "5e2c38d5eb592abb539d9c9506da3811",
+              "dataset_md5": "5e2c38d5eb592abb539d9c9506da3811",
+              "git_commit": "unavailable",
+              "quality_gate": "true"
+            },
+            "artifact_uri": "file:C:/Users/Danish Atif/OneDrive/Desktop/assignment-03-mlops-agent/mlartifacts/1/c6fe25a57a9f43029f6205e17c0af18b/artifacts",
+            "score": 0.88
+          },
+          {
+            "run_id": "9f806c03e9c647bdba41c57d61cb8fda",
+            "status": "RUNNING",
+            "start_time": 1794428274491,
+            "end_time": null,
+            "params": {
+              "n_estimators": "100",
+              "random_seed": "42"
+            },
+            "metrics": {
+              "f1_score": 0.88,
+              "accuracy": 0.8875,
+              "precision": 0.8918918918918919,
+              "recall": 0.868421052631579,
+              "roc_auc": 0.9771303258145363
+            },
+            "tags": {
+              "mlflow.user": "Danish Atif",
+              "mlflow.source.name": "-c",
+              "mlflow.source.type": "LOCAL",
+              "mlflow.runName": "mlops-agent-training",
+              "dvc_dataset_version": "5e2c38d5eb592abb539d9c9506da3811",
+              "dataset_md5": "5e2c38d5eb592abb539d9c9506da3811",
+              "git_commit": "unavailable",
+              "quality_gate": "true"
+            },
+            "artifact_uri": "file:C:/Users/Danish Atif/OneDrive/Desktop/assignment-03-mlops-agent/mlartifacts/1/9f806c03e9c647bdba41c57d61cb8fda/artifacts",
+            "score": 0.88
+          }
+        ],
+        "excluded": [],
+        "caveat": "The highest evaluation score alone does not establish production readiness. Production readiness requires passing the defined quality gate, sufficient recorded provenance, and the relevant operational checks."
+      },
+      "error": null,
+      "duration_ms": 3462.403899990022,
+      "request_id": "a7568407-a603-431f-997c-0122e86a7260"
+    },
+    {
+      "tool_name": "dataset_version",
+      "status": "SUCCESS",
+      "data": {
+        "dataset": "data/raw_dataset.csv",
+        "provenance": {
+          "available": true,
+          "path": "data\\raw_dataset.csv",
+          "metadata_file": "data\\raw_dataset.csv.dvc",
+          "checksum": "5e2c38d5eb592abb539d9c9506da3811",
+          "size": 32663,
+          "raw": {
+            "outs": [
+              {
+                "path": "raw_dataset.csv",
+                "md5": "5e2c38d5eb592abb539d9c9506da3811",
+                "size": 32663,
+                "hash": "md5"
+              }
+            ]
+          }
+        },
+        "working_copy_sha256": "807b55686c86815d373fd841dc8e1c3dbe6bb917188692d4387055fbfabe7d66",
+        "git_commit": null,
+        "recorded": true,
+        "run_id": "3089fbf5543c456a93aa2e0067c3fd2b",
+        "dvc_remotes": [],
+        "mlflow_provenance": {
+          "dvc_dataset_version": "5e2c38d5eb592abb539d9c9506da3811",
+          "dataset_md5": "5e2c38d5eb592abb539d9c9506da3811",
+          "git_commit": "unavailable"
+        }
+      },
+      "error": null,
+      "duration_ms": 1071.7361999559216,
+      "request_id": "a7568407-a603-431f-997c-0122e86a7260"
+    },
+    {
+      "tool_name": "data_changes",
+      "status": "SUCCESS",
+      "data": {
+        "data_changes": [],
+        "dvc_changed": false,
+        "unrelated_changes": [],
+        "dvc_available": true
+      },
+      "error": null,
+      "duration_ms": 1505.6677999673411,
+      "request_id": "a7568407-a603-431f-997c-0122e86a7260"
+    },
+    {
+      "tool_name": "deployment_version",
+      "status": "ERROR",
+      "data": {
+        "available": false,
+        "error": "ConfigException: Invalid kube-config file. No configuration found."
+      },
+      "error": "ConfigException: Invalid kube-config file. No configuration found.",
+      "duration_ms": 1282.5060000177473,
+      "request_id": "a7568407-a603-431f-997c-0122e86a7260"
+    },
+    {
+      "tool_name": "pod_diagnosis",
+      "status": "ERROR",
+      "data": {
+        "available": false,
+        "error": "ConfigException: Invalid kube-config file. No configuration found."
+      },
+      "error": "ConfigException: Invalid kube-config file. No configuration found.",
+      "duration_ms": 0.14869996812194586,
+      "request_id": "a7568407-a603-431f-997c-0122e86a7260"
+    },
+    {
+      "tool_name": "dag_status",
+      "status": "ERROR",
+      "data": {
+        "available": false,
+        "status": "ERROR",
+        "error": "ConnectError: [WinError 10061] No connection could be made because the target machine actively refused it"
+      },
+      "error": "ConnectError: [WinError 10061] No connection could be made because the target machine actively refused it",
+      "duration_ms": 4469.554000010248,
+      "request_id": "a7568407-a603-431f-997c-0122e86a7260"
+    },
+    {
+      "tool_name": "failed_tasks",
+      "status": "ERROR",
+      "data": {
+        "available": false,
+        "status": "ERROR",
+        "error": "ConnectError: [WinError 10061] No connection could be made because the target machine actively refused it"
+      },
+      "error": "ConnectError: [WinError 10061] No connection could be made because the target machine actively refused it",
+      "duration_ms": 4246.08009995427,
+      "request_id": "a7568407-a603-431f-997c-0122e86a7260"
+    },
+    {
+      "tool_name": "run_details",
+      "status": "SUCCESS",
+      "data": {
+        "available": true,
+        "run_id": "3089fbf5543c456a93aa2e0067c3fd2b",
+        "status": "FINISHED",
+        "start_time": 1794428474386,
+        "end_time": 1794428474505,
+        "params": {
+          "n_estimators": "100",
+          "random_seed": "42"
+        },
+        "metrics": {
+          "f1_score": 0.88,
+          "accuracy": 0.8875,
+          "precision": 0.8918918918918919,
+          "recall": 0.868421052631579,
+          "roc_auc": 0.9771303258145363
+        },
+        "tags": {
+          "mlflow.user": "Danish Atif",
+          "mlflow.source.name": "-c",
+          "mlflow.source.type": "LOCAL",
+          "mlflow.runName": "mlops-agent-training",
+          "dvc_dataset_version": "5e2c38d5eb592abb539d9c9506da3811",
+          "dataset_md5": "5e2c38d5eb592abb539d9c9506da3811",
+          "git_commit": "unavailable",
+          "quality_gate": "true"
+        },
+        "artifact_uri": "file:C:/Users/Danish Atif/OneDrive/Desktop/assignment-03-mlops-agent/mlartifacts/1/3089fbf5543c456a93aa2e0067c3fd2b/artifacts",
+        "artifacts": [
+          "metadata/model_metadata.json",
+          "model/model.joblib",
+          "preprocessing/preprocessor.joblib"
+        ],
+        "provenance": {
+          "dvc_dataset_version": "5e2c38d5eb592abb539d9c9506da3811",
+          "dataset_md5": "5e2c38d5eb592abb539d9c9506da3811",
+          "git_commit": "unavailable"
+        },
+        "quality_gate": "true"
+      },
+      "error": null,
+      "duration_ms": 19.51549999648705,
+      "request_id": "a7568407-a603-431f-997c-0122e86a7260"
+    }
+  ],
+  "confirmation_required": false,
+  "confirmation_token": null
+}

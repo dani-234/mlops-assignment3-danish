@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.env
+mlruns/
+artifacts/
+.dvc/cache/
+*.pyc
+*.log
+*.db
+mlartifacts/
+.airflow/
+.airflow-venv/
+*.egg-info/
+.dvc/cache/
+.dvc/tmp/

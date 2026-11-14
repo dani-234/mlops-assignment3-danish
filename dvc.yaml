@@ -1,0 +1,13 @@
+stages:
+  train:
+    cmd: python -m training.train
+    deps:
+    - data/raw_dataset.csv
+    - training/train.py
+    params:
+    - seed
+    outs:
+    - artifacts/model.joblib
+    - artifacts/model_metadata.json
+    - artifacts/preprocessor.joblib
+    - artifacts/processed_data.joblib
